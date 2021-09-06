@@ -25,3 +25,23 @@ kérések esetén a routert, hogy a service router szolgálja ki a kéréseket.
 **Iskolai form megjelenése:**
 
 ![School form](./img/school_form.png "School form")
+
+
+### 3. feladat: Szerver oldali entitás kezelésének 3 rétegen keresztüli felépítése (10 pont)
+
+**Ide tartozó tesztek forrása:** `controllers/classroom.test.js` és `classroom.integration.test.js`file
+
+Teszt futtató parancsok: `npm run test classroom.test.js` és `npm run test classroom.integration.test.js`
+
+- Pótold a backend -en a `backend/src/controllers/classroom` mappában hiányzó
+service -t, routert, és controller -t.
+- A validálásnak és a működési elvnek a többi controllerét kell követnie.
+- A modellt készen kapod: `backend/src/models/classroom.model.js`.
+- A `backend/src/server.js` fájlban módosítsd a `/classroom` url -re érkező
+kérések esetén a routert, hogy a classroom router szolgálja ki a kéréseket.
+
+Ellenőrzés: aktiváld az url-ben a kliens oldalon a Classroom-list komponenst a frontend oldalon (lásd routing.module és mellékelt kép). Ki kell listázódni az osztályoknak és módosíthatónak kell lenniük az `Update` gombra kattintva, vagy új osztály is elmenthető. (A lista frissül modósítás vagy mentés esetén)
+
+**Ellenőrzési lehetőség:**
+
+![Classroom list](./img/class_list.png "Classrooms")
