@@ -7,6 +7,6 @@
  * A @getAll metódus adja vissza a populált teljes "building" listát
  */
 
-exports.update = (buildingId, className) => {};
+exports.update = (buildingId, className) => Model.findByIdAndUpdate(buildingId, className, { new: true });;
 
-exports.getAll = () => {}
+exports.getAll = () => Model.find().populate('classroom');
